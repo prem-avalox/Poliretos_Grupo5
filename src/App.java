@@ -212,6 +212,28 @@ public class App {
 
         System.out.println("A5:");
         ZC.zcA5();
+        
+        try {
+            SebastianChicaiza sch = new SebastianChicaiza();
+            System.out.println("Ejecutando ejercicio F16...");
+            sch.SCF16();
+            System.out.println("F16 completado...");
+
+            System.out.println("Ejecutando ejercicio F17...");
+            sch.SCF17();
+            System.out.println("F17 completado.");
+
+            System.out.println("Ejecutando ejercicio F18...");
+            sch.SCF18();
+            System.out.println("F18 completado.");
+
+            System.out.println("Ejecutando ejercicio F19...");
+            sch.SCF19();
+            System.out.println("F19 completado.");
+        } catch (Exception e) {
+            System.err.println("Error :c" + e.getMessage());
+            e.printStackTrace();
+        }
 
     }
 }
