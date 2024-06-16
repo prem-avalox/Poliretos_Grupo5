@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class AndresPalacios {
+
+
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Selecciona una opción:");
@@ -16,32 +19,32 @@ public class AndresPalacios {
         
         switch (opcion) {
             case 1:
-                APcontarVocales();
+                APC01();
                 break;
             case 2:
-                APcontarConsonantes();
+                APC02();
                 break;
             case 3:
-                APeliminarVocal();
+                APC03();
                 break;
             case 4:
-                APeliminarConsonante();
+                APC04();
                 break;
             case 5:
-                APinvertirFraseVocalesMayusculas();
+                APC05();
                 break;
             case 6:
-                APinvertirFraseConsonantesMayusculas();
+                APC06();
                 break;
             case 7:
-                APfraseMayusculasSinJ();
+                APC07();
                 break;
             default:
                 System.out.println("Opción no válida.");
         }
     }
     
-    public static void APcontarVocales() {
+    public static void APC01() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa una frase:");
         String frase = scanner.nextLine().toLowerCase(); // Convertimos la frase a minúsculas para facilitar la comparación
@@ -57,7 +60,7 @@ public class AndresPalacios {
         System.out.println("La frase \"" + frase + "\" tiene " + contadorVocales + " vocales.");
     }
     
-    public static void APcontarConsonantes() {
+    public static void APC02() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa una frase:");
         String frase = scanner.nextLine().toLowerCase(); // Convertimos la frase a minúsculas para facilitar la comparación
@@ -75,7 +78,7 @@ public class AndresPalacios {
         System.out.println("La frase \"" + frase + "\" tiene " + contadorConsonantes + " consonantes.");
     }
     
-    public static void APeliminarVocal() {
+    public static void APC03() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa una frase:");
         String frase = scanner.nextLine().toLowerCase(); // Convertimos la frase a minúsculas para facilitar la comparación
@@ -88,7 +91,7 @@ public class AndresPalacios {
         System.out.println("La frase resultante es: \"" + nuevaFrase + "\"");
     }
     
-    public static void APeliminarConsonante() {
+    public static void APC04() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa una frase:");
         String frase = scanner.nextLine().toLowerCase(); // Convertimos la frase a minúsculas para facilitar la comparación
@@ -101,7 +104,7 @@ public class AndresPalacios {
         System.out.println("La frase resultante es: \"" + nuevaFrase + "\"");
     }
     
-    public static void APinvertirFraseVocalesMayusculas() {
+    public static void APC05() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa una frase:");
         String frase = scanner.nextLine().toLowerCase(); // Convertimos la frase a minúsculas para facilitar la comparación
@@ -119,7 +122,7 @@ public class AndresPalacios {
         System.out.println("La frase invertida con vocales en mayúscula es: \"" + fraseInvertida.toString() + "\"");
     }
     
-    public static void APinvertirFraseConsonantesMayusculas() {
+    public static void APC06() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa una frase:");
         String frase = scanner.nextLine().toLowerCase(); // Convertimos la frase a minúsculas para facilitar la comparación
@@ -137,7 +140,7 @@ public class AndresPalacios {
         System.out.println("La frase invertida con consonantes en mayúscula es: \"" + fraseInvertida.toString() + "\"");
     }
     
-    public static void APfraseMayusculasSinJ() {
+    public static void APC07() {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingresa una frase que contenga la letra 'j':");
         String frase = scanner.nextLine();
