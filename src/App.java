@@ -151,5 +151,67 @@ public class App {
         MD.setMdA(sc.nextInt());
         MD.mdR6(MD.getMdA());
 
+        ZapataCesar ZC = new ZapataCesar();
+
+        System.out.println("SN9:");
+        System.out.println("Digite el número de términos para SN9:");
+        int terminosSN9 = sc.nextInt();
+        ZC.zcSN9(terminosSN9);
+
+        System.out.println("SN10:");
+        System.out.println("Digite el número de términos para SN10:");
+        int terminosSN10 = sc.nextInt();
+        ZC.zcSN10(terminosSN10);
+
+        System.out.println("SN12:");
+        System.out.println("Digite el número de términos para SN12:");
+        int terminosSN12 = sc.nextInt();
+        ZC.zcSN12(terminosSN12);
+
+        System.out.println("SC8:");
+        System.out.println("Digite el número de caracteres para SC8:");
+        int caracteresSC8 = sc.nextInt();
+        ZC.zcSC8(caracteresSC8);
+
+        System.out.println("SC9:");
+        System.out.println("Digite el número de caracteres para SC9:");
+        int caracteresSC9 = sc.nextInt();
+        ZC.zcSC9(caracteresSC9);
+
+        System.out.println("F9:");
+        System.out.println("Digite el número de niveles para F9:");
+        int nivelesF9 = sc.nextInt();
+        ZC.zcF9(nivelesF9);
+
+        System.out.println("F10:");
+        System.out.println("Digite el número de niveles para F10:");
+        int nivelesF10 = sc.nextInt();
+        ZC.zcF10(nivelesF10);
+
+        System.out.println("F11:");
+        System.out.println("Digite el número de niveles para F11:");
+        int nivelesF11 = sc.nextInt();
+        ZC.zcF11(nivelesF11);
+
+        System.out.println("Arrays");
+        System.out.println("A1:");
+        ZC.zcA1();
+
+        System.out.println("A2:");
+        System.out.println("Digite el tamaño para el método A2:");
+        int tamanoA2 = sc.nextInt();
+        System.out.println("Digite el caracter para el método A2:");
+        char caracterA2 = sc.next().charAt(0);
+        ZC.zcA2(tamanoA2, caracterA2);
+
+        System.out.println("A3:");
+        ZC.zcA3();
+
+        System.out.println("A4:");
+        ZC.zcA4();
+
+        System.out.println("A5:");
+        ZC.zcA5();
+
     }
 }
